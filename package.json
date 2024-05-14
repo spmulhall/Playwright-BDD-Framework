@@ -1,0 +1,16 @@
+{
+  "name": "playwright-ts",
+  "version": "1.0.0",
+  "description": "# npm",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "npx playwright test --ui",
+    "test:headless": "npx playwright test"
+  },
+  "author": "Steve Mulhall",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.10"
+  }
+}
