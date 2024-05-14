@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test:ui": "npx playwright test --ui",
-    "test:headless": "npx playwright test"
+    "test:headless": "npx playwright test",
+    "generate: report": "npx playwright show-report",
+    "execute": "npx playwright test && npx playwright show-report"
   },
   "author": "Steve Mulhall",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^10.7.0",
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.12.10"
   }
