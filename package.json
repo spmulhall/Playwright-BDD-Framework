@@ -4,8 +4,8 @@
   "description": "# npm",
   "main": "index.js",
   "scripts": {
-    "test:ui": "npx playwright test --ui",
-    "test:headless": "npx playwright test",
+    "test": "cucumber-js test & npx ts-node",
+    "test:ui": "cucumber-js test & npx ts-node --ui",
     "generate: report": "npx playwright show-report",
     "execute": "npx playwright test && npx playwright show-report"
   },
@@ -14,6 +14,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^10.7.0",
     "@playwright/test": "^1.44.0",
-    "@types/node": "^20.12.10"
+    "@types/node": "^20.12.10",
+    "ts-node": "^10.9.2"
   }
 }
